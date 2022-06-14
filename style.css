@@ -24,12 +24,12 @@ img {
     row-gap: 25px;
     padding-bottom: 20px;
     margin-top: 30px;
-    ma
+    
     
 }
 #head_of :hover{
     width: 100px;
-    background-color: brown;
+    background-color: darkmagenta;
     transition: all 1s ease-in-out;
 }
 #animate {
@@ -94,12 +94,16 @@ header>p {
     margin-bottom: 20px;
 }
 .song1 {
-    transition: transform 1s;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
-.song1 :hover {
+.song1:hover {
+    opacity: 1;
+    cursor: pointer;
+}
 
-    transform: scale(1);
-    
-   
+.song1:active {
+    color: #BFC0C0;
+    cursor: pointer;
 }
