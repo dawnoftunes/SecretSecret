@@ -69,6 +69,7 @@ h1 {
 }
 p {
     text-align: center;
+    
 }
 #first_main {
     width: 300px;
@@ -93,17 +94,9 @@ header>p {
     font-size: .8em;
     margin-bottom: 20px;
 }
-.song1 {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
 
-.song1:hover {
-    opacity: 1;
-    cursor: pointer;
-}
-
-.song1:active {
-    color: #BFC0C0;
-    cursor: pointer;
+@media only screen and (min-width: 1000px) {
+    grid-template-columns: auto 1fr auto;
+    
+    
 }
