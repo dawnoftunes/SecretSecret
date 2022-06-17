@@ -19,16 +19,21 @@ img {
 #head_of {
     display: grid;
     width: 300px;
-    background-color: blue;
+    background-color:blue;
     color: white;
     row-gap: 25px;
     padding-bottom: 20px;
     margin-top: 30px;
-    
+    margin-bottom: 10px;
     
 }
+div {
+    display: grid;
+    place-items: center;
+    padding: 15px;
+}
 #head_of :hover{
-    width: 100px;
+    width: 200px;
     background-color: darkmagenta;
     transition: all 1s ease-in-out;
 }
@@ -38,6 +43,7 @@ img {
     color: white;
 
 }
+
 @keyframes Happening {
     0%{
         font-size: 15px;
@@ -61,7 +67,7 @@ img {
     
 }
 #By {
-    background-color: blue;
+    background-image: url(d.o.t.jpg);
     color: white;
 }
 h1 {
@@ -69,31 +75,49 @@ h1 {
 }
 p {
     text-align: center;
+    color: white;
     
 }
 #first_main {
     width: 300px;
-    background-color: blue;
     color: white;
     row-gap: 10px;
 }
 div>p {
     color: white;
-    font-size: 50px;
+    font-size: 15px;
+    padding-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+div>h3 {
+    color: white;
+    font-size: 25px;
     padding-bottom: 30px;
+    text-align: center;
+
 }
 div>img {
     height: 350px;
+    padding-bottom: 30px;
+    
 }
 div>header {
     text-align: center;
     font-size: 20px;
     margin-top: 20px;
+    background-color: blue;
 }
 header>p {
     font-size: .8em;
     margin-bottom: 20px;
 }
+.song {
+    align-items: center;
+    justify-items: center;
+}
+
 
 @media only screen and (min-width: 1000px) {
     grid-template-columns: auto 1fr auto;
