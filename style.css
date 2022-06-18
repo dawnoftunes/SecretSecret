@@ -13,9 +13,7 @@ body {
     
 }
 
-img {
-    width: 100%;
-}
+
 #head_of {
     display: grid;
     width: 300px;
@@ -79,6 +77,8 @@ p {
     
 }
 #first_main {
+    display: grid;
+    justify-items: center;
     width: 300px;
     color: white;
     row-gap: 10px;
@@ -120,7 +120,8 @@ header>p {
 
 
 @media only screen and (min-width: 1000px) {
-    grid-template-columns: auto 1fr auto;
+    * {grid-template-columns: (auto 1fr auto);
+    }
     
     
 }
